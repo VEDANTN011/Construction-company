@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html >
+    <head> 
+              <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>bebpage design</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,
+wght@0,14..32,100..900;1,14..32,100..900&family=Matangi:wght@300..900&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+         
+                <ul> 
+                    <li><a href="index.html" class="active">HOME</a></li>
+                      <li><a href ="" >ABOUT</a></li>
+                       <li><a href ="#" >SERVICE</a></li>
+                        <li><a href ="#" >DESGIN</a></li>
+                         <li><a href ="#" >CONTACT</a></li>
+                     <li><a href="#" onclick="showLoginForm()">LOGIN</a></li>
+                       
+                </ul>
+        </div>
+
+         
+    </div>
+    <div id="loginPopup" class="login-popup">
+    <div class="login-box">
+        <span class="close-btn" onclick="hideLoginForm()">&times;</span>
+        <h2>User Login</h2><br>
+        <input type="text" id="username" placeholder="Username"><br><br>
+        <input type="password" id="password" placeholder="Password"><br><br>
+        <div class="flex">
+        <input type="checkbox" name="" id="remember-me">
+        <label for="remember-me"> Remember me</label>
+        <a href="#">forget password?</a>
+        </div>
+        <button class="login-btn" onclick="login()">Login</button>
+      
+        <p id="loginMessage" style="color: red;"></p>
+         <p class=" link">Don't have account<br>
+            <a href="Register.html">Register</a> here
+
+    </div>
+</div>
+
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+         </nav>
+         
+           <div class="text-box">
+            <h1>Discover The Colourful World </h1>
+            <h2><p>LEADER IN QUALITY CONSTRUCTION AND <br>INFRASTRUCTURE</p></h2>
+            <a href="" class="hero-btn">Visit us to know More</a>
+           </div>
+    
+
+         </section>
+<!--course-->>
+ <section class="course">
+    <h1>OUR SERVICES</h1>
+    
+    <p>Bulid the house and  big institues and roads</p>
+    
+
+    <div class="row">
+        <div class = "course-col">
+            <h3>PRE-CONSRTUCTION SERVICEs</h3>
+            <p>We take our time on thinking clearly  Before any contruction begins,  are the new features used in building the houses are took in the considertiom</p>
+        </div> 
+    
+
+        <div class = "course-col">
+            <h3>CONSTRUCTION SERVICES</h3>
+            <p>Our customers love the pace qualit sempo that we shoor staring sach of the princopaconstruction processes</p>
+        </div> 
+    
+
+        <div class = "course-col">
+            <h3>DESIGN-BUILD</h3>
+            <p>If a project is not the compress vt may hire a designer builder type of confractor, to make the longenits of the construction shorter</p>
+        </div> 
+
+        <div class = "course-col">
+            <h3>House RENOVATION</h3>
+            <p>If a project is not the compress vt may hire a designer builder type of confractor, to make the longenits of the construction shorter</p>
+        </div> 
+
+        <div class = "course-col">
+            <h3>INTERIOR DESIGN</h3>
+            <p>If a project is not the compress vt may hire a designer builder type of confractor, to make the longenits of the construction shorter</p>
+        </div>
+        
+        <div class = "course-col">
+            <h3>MATERIAL SUPPLY</h3>
+            <p>If a project is not the compress vt may hire a designer builder type of confractor, to make the longenits of the construction shorter</p>
+        </div> 
+    </div>
+ </section>
+
+
+ <section class="campus">
+    <h1>OUR HISTORY</h1>
+    
+    <div class="row">
+        <div class="campus-col">
+            <img src="work.jpg">
+            <div class="layer">
+                <h3>ONSITE </h3>
+            </div>
+        </div>
+         <div class="campus-col">
+            <img src="house.jpg">
+            <div class="layer">
+                <h3>HOUSE</h3>
+            </div>
+        </div>
+         <div class="campus-col">
+            <img src="bridge.jpg">
+            <div class="layer">
+                <h3>BRIDGE</h3>
+            </div>
+        </div>
+    </div>
+ </section>
+
+
+
+
+<!---------Javascript toggle menu----->
+         <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+           
+         </script>
+    </body>
+        </html>
